@@ -1,0 +1,34 @@
+.modal {
+  width: min(520px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 28px;
+  overflow-y: auto;
+  border: 3px solid var(--color-console-border);
+  border-radius: 12px;
+  color: var(--color-text);
+  background: var(--color-modal);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+
+  &::backdrop {
+    background: rgb(24 30 22 / 65%);
+  }
+}
+
+.record {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.close {
+  display: block;
+  margin: 20px 0 0 auto;
+  padding: 8px 20px;
+  border: 1px solid var(--color-modal-button-border);
+  border-radius: 6px;
+  background: var(--color-console);
+}

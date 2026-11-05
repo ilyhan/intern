@@ -1,0 +1,129 @@
+.game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  container-type: inline-size;
+  color: var(--color-text);
+  background: radial-gradient(ellipse at 50% 35%, var(--color-screen-highlight), var(--color-screen) 85%);
+  user-select: none;
+}
+
+.header {
+  position: absolute;
+  z-index: 3;
+  inset: 3% 5% auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.name {
+  padding-top: 2%;
+  font-size: min(1.8vw, 18px);
+  letter-spacing: 0.04em;
+}
+
+.counter,
+.lives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caption {
+  font-size: min(1.08vw, 10.8px);
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+}
+
+.score {
+  font-family: 'Courier New', monospace;
+  font-size: min(4.5vw, 45px);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.lifeIcons {
+  display: flex;
+  gap: min(0.6vw, 6px);
+}
+
+.life {
+  width: min(1.62vw, 16.2px);
+  height: min(2.4vw, 24px);
+}
+
+.lost {
+  opacity: 0.15;
+}
+
+.scenery {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.chicken {
+  position: absolute;
+  width: 13%;
+  height: 17%;
+  pointer-events: none;
+}
+
+.left-up {
+  left: -1%;
+  top: 15.5%;
+}
+.left-down {
+  left: -1%;
+  top: 38.5%;
+}
+.right-up {
+  right: -1%;
+  top: 15.5%;
+}
+.right-down {
+  right: -1%;
+  top: 38.5%;
+}
+
+.wolf {
+  position: absolute;
+  left: 30%;
+  top: 28%;
+  width: 40%;
+  height: 68%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.egg {
+  position: absolute;
+  z-index: 2;
+  width: 3.8%;
+  height: 6.5%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.broken {
+  width: 9%;
+  height: 8%;
+}
+
+.footer {
+  position: absolute;
+  inset: auto 3% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: min(1.5vw, 15px);
+}
+

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="none">
+      <defs>
+        <pattern id="console-fence" width="38" height="90" patternUnits="userSpaceOnUse">
+          <path d="M8 90V18L19 7 30 18V90" fill="#737b56" />
+        </pattern>
+      </defs>
+      <path d="M0 670Q60 630 120 659T240 655T360 670T480 656T600 665T720 655T840 670T1000 650V700H0Z" fill="#65754f" />
+      <path d="M0 495H290V585H0ZM710 495H1000V585H710Z" fill="url(#console-fence)" opacity=".65" />
+      <g transform="translate(0 28)" fill="none" stroke="#786c46" stroke-width="12" stroke-linecap="round">
+        <path d="M0 200H68L276 293M0 361H68L276 438M1000 200H932L724 293M1000 361H932L724 438" />
+      </g>
+      <g transform="translate(0 28)" stroke="#786c46" stroke-width="7">
+        <path d="M60 204V264M191 258V311M60 366V425M191 411V464M940 204V264M809 258V311M940 366V425M809 411V464" />
+      </g>
+    </svg>
